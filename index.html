@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elektroinstallation Manfred Kammhuber</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<style>
+body {
+    margin:0;
+    font-family:'Poppins', sans-serif;
+    background:#f4f8ff;
+    color:#222;
+}
+/* HERO */
+.hero {
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
+    url('');
+    background-size:cover;
+    background-position:center;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+.hero h1 { font-size:3rem; margin-bottom:15px; padding:0 20px; }
+.hero p { font-size:1.2rem; }
+/* NAV */
+nav {
+    position:sticky;
+    top:0;
+    background:#0b3d91;
+    padding:10px;
+    text-align:center;
+    z-index:1000;
+}
+nav a {
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+nav a:hover { text-decoration:underline; }
+/* SECTIONS */
+section {
+    padding:60px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+/* CARDS */
+.services {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+.card-link {
+    text-decoration:none;
+    color:inherit;
+    display:block;
+}
+.card {
+    background:white;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    overflow:hidden;
+    transition:0.3s;
+    height:100%;
+    cursor:pointer;
+}
+.card:hover {
+    transform:translateY(-5px);
+    box-shadow:0 8px 25px rgba(11,61,145,0.25);
+}
+.card img {
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+.card-content {
+    padding:20px;
+}
+.card h3 {
+    color:#0b3d91;
+    margin-bottom:10px;
+}
+.more {
+    display:inline-block;
+    margin-top:12px;
+    color:#0b3d91;
+    font-weight:700;
+}
+/* CONTACT */
+.contact-box {
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+form input, form textarea {
+    width:100%;
+    padding:10px;
+    margin:8px 0;
+    border-radius:5px;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+}
+form button {
+    background:#0b3d91;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:6px;
+    cursor:pointer;
+    width:100%;
+    font-size:1rem;
+}
+form button:hover { background:#093070; }
+/* MAP */
+iframe {
+    width:100%;
+    height:300px;
+    border:none;
+    border-radius:10px;
+    margin-top:15px;
+}
+/* FOOTER */
+footer {
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<h1>Elektroinstallation Manfred Kammhuber</h1>
+<p>Moderne Elektrotechnik in der Perle des Vilstals</p>
+<p>Website noch in Arbeti</p>
+</div>
+
+<nav>
+<a href="#leistungen">Leistungen</a>
+<a href="#kontakt">Kontakt</a>
+<a href="#impressum">Impressum</a>
+<a href="#datenschutz">Datenschutz</a>
+</nav>
+
+<section id="leistungen">
+<h2>Unsere Leistungen</h2>
+<p>Klicken Sie auf eine Leistung für weitere Details:</p>
+<div class="services">
+
+<a class="card-link" href="elektroinstallation.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400&q=80" alt="Elektroinstallationen">
+<div class="card-content">
+<h3>Elektroinstallationen</h3>
+<p>Planung und Umsetzung kompletter Elektroanlagen in Neubauten und Renovierungen – sicher, normgerecht und zukunftssicher.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="beleuchtungstechnik.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&q=80" alt="Beleuchtungstechnik">
+<div class="card-content">
+<h3>Beleuchtungstechnik</h3>
+<p>Individuelle Lichtkonzepte mit moderner LED-Technik für Wohnräume, Außenbereiche und Gewerbeobjekte.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="smart-home.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=400&q=80" alt="Smart Home">
+<div class="card-content">
+<h3>Smart Home</h3>
+<p>Intelligente Steuerungssysteme für Licht, Heizung und Sicherheit – komfortabel per Smartphone bedienbar.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="photovoltaik.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=80" alt="Photovoltaik">
+<div class="card-content">
+<h3>Photovoltaik</h3>
+<p>Effiziente Solaranlagen für nachhaltige Stromerzeugung und langfristige Kostensenkung.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="e-check-wartung.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&q=80" alt="E-Check und Wartung">
+<div class="card-content">
+<h3>E-Check & Wartung</h3>
+<p>Regelmäßige Prüfung elektrischer Anlagen zur Sicherstellung von Funktionalität und Sicherheit.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="muellertechnik.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80" alt="Müllertechnik">
+<div class="card-content">
+<h3>Spezialisiert Müllertechnik</h3>
+<p>Steuerungstechnische Anwendungen für Mühlen.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+<a class="card-link" href="team.html">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Unser Team">
+<div class="card-content">
+<h3>Unser Team</h3>
+<p>Unsere Spezialisten zum Thema Elektrotechnik stehen Ihnen gerne zur Verfügung.</p>
+<span class="more">Mehr erfahren →</span>
+</div>
+</div>
+</a>
+
+</div>
+</section>
+
+<section id="kontakt">
+<h2>Kontakt</h2>
+<div class="contact-box">
+<p>
+<strong>Adresse:</strong><br>
+Theodor Triebenbacherstraße 16<br>
+84149 Velden/Vils
+</p>
+<p><strong>Email:</strong> elektro-kammhuber@gmx.net</p>
+<h3>Route planen</h3>
+<iframe src="https://www.google.com/maps?q=Theodor+Triebenbacherstraße+16+Velden&output=embed"></iframe>
+<h3>Kontaktformular</h3>
+<form action="mailto:elektro-kammhuber@gmx.net" method="post" enctype="text/plain">
+<input type="text" name="Name" placeholder="Ihr Name" required>
+<input type="email" name="Email" placeholder="Ihre E-Mail" required>
+<textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
+<button type="submit">Nachricht senden</button>
+</form>
+</div>
+</section>
+
+<section id="impressum">
+<h2>Impressum</h2>
+<p>
+Elektroinstallation Manfred Kammhuber<br>
+Theodor Triebenbacherstraße 16<br>
+84149 Velden an der Vils<br>
+E-Mail: elektro-kammhuber@gmx.net<br>
+Tel. +49 8742 8798<br>
+Mobil +49 171 20 53 473<br>
+</p>
+</section>
+
+<section id="datenschutz">
+<h2>Datenschutz</h2>
+<p>Ihre Daten werden gemäß DSGVO vertraulich behandelt. Informationen aus dem Kontaktformular werden ausschließlich zur Bearbeitung Ihrer Anfrage verwendet.</p>
+</section>
+
+<footer>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+# Firebase-Cache und OS-Dateien ignorieren
+.firebase/
+.firebaserc
+node_modules/
+.DS_Store
+Thumbs.db

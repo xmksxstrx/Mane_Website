@@ -1,0 +1,8 @@
+# Entspricht .firebaserc – BITTE ANPASSEN nach `firebase init`
+# Trage hier deine Firebase-Projekt-ID ein (aus der Firebase Console).
+# Diese Datei wird von `firebase init hosting` automatisch erstellt/überschrieben.
+{
+  "projects": {
+    "default": "DEIN-PROJEKT-ID-HIER"
+  }
+}
