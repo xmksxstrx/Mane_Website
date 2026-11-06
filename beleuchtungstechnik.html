@@ -1,42 +1,111 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Beleuchtungstechnik – Elektroinstallation Manfred Kammhuber</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f8ff;color:#222;}
+body { margin:0; font-family:'Poppins', sans-serif; background:#f4f8ff; color:#222; }
+.hero-sub {
+  height:45vh;
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+  url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1600&q=80');
+  background-size:cover; background-position:center;
+  color:white; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; padding:20px;
+}
+.hero-sub h1 { font-size:2.5rem; margin:0 0 10px 0; }
+.hero-sub p { font-size:1.1rem; max-width:700px; }
+nav { position:sticky; top:0; background:#0b3d91; padding:10px; text-align:center; z-index:1000; }
+nav a { color:white; margin:10px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+.white-box { background:white; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
+.white-box h2 { color:#0b3d91; margin-top:0; }
+.white-box h3 { color:#0b3d91; margin-bottom:8px; margin-top:22px; }
+ul.check { list-style:none; padding:0; }
+ul.check li { padding:8px 0 8px 32px; position:relative; }
+ul.check li::before { content:"✓"; position:absolute; left:0; color:#0b3d91; font-weight:bold; font-size:1.2rem; }
+.fachbereich { background:#eaf0ff; border-radius:10px; padding:20px; margin-top:15px; }
+.fachbereich h3 { margin-top:0; }
+.fachbereich p { margin-bottom:0; }
+.btn-row { display:flex; gap:15px; flex-wrap:wrap; margin-top:20px; }
+.btn { display:inline-block; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; }
+.btn-primary { background:#0b3d91; color:white; }
+.btn-primary:hover { background:#093070; }
+.btn-secondary { background:white; color:#0b3d91; border:2px solid #0b3d91; }
+.btn-secondary:hover { background:#eaf0ff; }
+.back-link { display:inline-block; margin-bottom:20px; color:#0b3d91; text-decoration:none; font-weight:bold; }
+.back-link:hover { text-decoration:underline; }
+footer { background:#0b3d91; color:white; text-align:center; padding:20px; margin-top:40px; }
+img.detail { width:100%; height:320px; object-fit:cover; border-radius:12px; margin-bottom:20px; }
+</style>
+</head>
+<body>
 
-.hero-sub{height:40vh;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1000&q=80');background-size:cover;background-position:center;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+<div class="hero-sub">
+<h1>Beleuchtungstechnik</h1>
+<p>Lichtplanung mit System und Verstand – vom Design bis zur Effizienz.</p>
+</div>
 
-.hero-sub h1{font-size:2.3rem;margin:0 0 10px 0;}
+<nav>
+<a href="index.html">Startseite</a>
+<a href="index.html#leistungen">Alle Leistungen</a>
+<a href="index.html#kontakt">Kontakt</a>
+<a href="index.html#impressum">Impressum</a>
+</nav>
 
-nav{position:sticky;top:0;background:#0b3d91;padding:10px;text-align:center;}
+<section>
+<a class="back-link" href="index.html#leistungen">← Zurück zur Übersicht</a>
 
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
-
-section{padding:50px 20px;max-width:900px;margin:auto;}
-
-.box{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
-
-.box h2{color:#0b3d91;margin-top:0;}
-
-.back{display:inline-block;margin-bottom:20px;color:#0b3d91;text-decoration:none;font-weight:bold;}
-
-.btn{display:inline-block;padding:12px 24px;border-radius:6px;background:#0b3d91;color:white;text-decoration:none;font-weight:bold;margin-top:15px;}
-
-footer{background:#0b3d91;color:white;text-align:center;padding:20px;margin-top:40px;}
-
-img.detail{width:100%;height:300px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
-
-</style></head><body>
-<div class="hero-sub"><h1>Beleuchtungstechnik</h1><p>Individuelle Lichtkonzepte mit moderner LED-Technik für Wohnräume, Außenbereiche und Gewerbeobjekte.</p></div>
-<nav><a href="index.html">Startseite</a><a href="index.html#leistungen">Alle Leistungen</a><a href="index.html#kontakt">Kontakt</a></nav>
-<section><a class="back" href="index.html#leistungen">← Zurück zur Übersicht</a>
 <img class="detail" src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=1000&q=80" alt="Beleuchtungstechnik">
-<div class="box"><h2>Beleuchtungstechnik</h2><p>Individuelle Lichtkonzepte mit moderner LED-Technik für Wohnräume, Außenbereiche und Gewerbeobjekte.</p>
-<p>Platzhalter.</p>
-<p><strong>Kontakt:</strong><br>Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>Tel. 08742 / 8798 · Mobil 0171 / 20 53 473<br>E-Mail: elektro-kammhuber@gmx.net</p>
-<a class="btn" href="index.html#kontakt">Jetzt anfragen</a></div></section>
-<footer><p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p></footer>
-</body></html>
+
+<div class="white-box">
+<h2>Beleuchtungstechnik – Lichtplanung mit System und Verstand</h2>
+<p>Licht ist weit mehr als nur Helligkeit. Es schafft Atmosphäre, sorgt für Sicherheit, steigert die Produktivität und setzt Ihre Räume perfekt in Szene. Als Ihr Fachbetrieb entwickeln wir maßgeschneiderte Lichtlösungen, die exakt auf Ihre Bedürfnisse und die architektonischen Gegebenheiten abgestimmt sind.</p>
+<p><strong>Vom Design bis zur Effizienz.</strong></p>
+</div>
+
+<div class="white-box">
+<h2>Unsere Fachbereiche im Überblick</h2>
+
+<div class="fachbereich">
+<h3>Wohnlichtkonzepte</h3>
+<p><strong>Wohlfühlatmosphäre für Ihr Zuhause.</strong> Jedes Zimmer stellt andere Anforderungen an das Licht. Während in der Küche helles Arbeitslicht benötigt wird, steht im Wohnzimmer die Entspannung im Vordergrund. Wir planen und realisieren smarte, dimmbare und ästhetische Lichtlandschaften, die Funktionalität und Gemütlichkeit perfekt verbinden.</p>
+</div>
+
+<div class="fachbereich">
+<h3>Garten- und Teichbeleuchtung</h3>
+<p><strong>Ihr grünes Wohnzimmer bei Nacht.</strong> Mit der richtigen Außenbeleuchtung verlängern Sie die Gemütlichkeit Ihres Zuhauses bis in den Garten. Wir setzen Bäume, Wege, Terrassen und Teiche gekonnt in Szene. Dabei achten wir besonders auf witterungsbeständige, sichere Installationen und eine insektenfreundliche, energieeffiziente LED-Technik.</p>
+</div>
+
+<div class="fachbereich">
+<h3>Industrielle Beleuchtung</h3>
+<p><strong>Effizienz und Sicherheit am Arbeitsplatz.</strong> In Industrie, Gewerbe und Büro ist die richtige Beleuchtung ein entscheidender Faktor für die Konzentration, die Arbeitssicherheit und die Betriebskosten. Wir installieren normgerechte, robuste und langlebige Lichtbandsysteme, Hallenstrahler und Arbeitsplatzbeleuchtungen, die Ihren Energieverbrauch spürbar senken.</p>
+</div>
+</div>
+
+<div class="white-box">
+<h2>Unser Service für Sie</h2>
+<ul class="check">
+<li>Individuelle Beratung direkt bei Ihnen vor Ort</li>
+<li>Umstellung auf LED-Technik zur nachhaltigen Stromkostenersparnis</li>
+<li>Fachgerechte Installation nach den aktuellen Sicherheitsstandards</li>
+</ul>
+<p><strong>Lassen Sie uns gemeinsam Ihr Projekt zum Leuchten bringen!</strong><br>Kontaktieren Sie uns unverbindlich für ein persönliches Beratungsgespräch.</p>
+<div class="btn-row">
+<a class="btn btn-primary" href="index.html#kontakt">Jetzt Anfrage senden</a>
+<a class="btn btn-secondary" href="tel:+4987428798">Anrufen: 08742 / 8798</a>
+</div>
+<p style="margin-top:15px; font-size:0.95rem;">Adresse: Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>E-Mail: elektro-kammhuber@gmx.net · Mobil: 0171 / 20 53 473</p>
+</div>
+
+</section>
+
+<footer>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber · <a href="index.html#impressum" style="color:white;">Impressum</a> · <a href="index.html#datenschutz" style="color:white;">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>

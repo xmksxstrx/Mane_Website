@@ -1,42 +1,101 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Smart Home – Elektroinstallation Manfred Kammhuber</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f8ff;color:#222;}
+body { margin:0; font-family:'Poppins', sans-serif; background:#f4f8ff; color:#222; }
+.hero-sub {
+  height:45vh;
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+  url('https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=1000&q=80');
+  background-size:cover; background-position:center;
+  color:white; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; padding:20px;
+}
+.hero-sub h1 { font-size:2.5rem; margin:0 0 10px 0; }
+.hero-sub p { font-size:1.1rem; max-width:700px; }
+nav { position:sticky; top:0; background:#0b3d91; padding:10px; text-align:center; z-index:1000; }
+nav a { color:white; margin:10px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+.white-box { background:white; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
+.white-box h2 { color:#0b3d91; margin-top:0; }
+.wert { background:#eaf0ff; border-radius:10px; padding:20px; margin-top:15px; }
+.wert h3 { margin:0 0 8px 0; color:#0b3d91; }
+.wert p { margin:0; }
+.wert ul { margin:10px 0 0 20px; padding:0; }
+.wert li { margin-bottom:5px; }
+.btn-row { display:flex; gap:15px; flex-wrap:wrap; margin-top:20px; }
+.btn { display:inline-block; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; }
+.btn-primary { background:#0b3d91; color:white; }
+.btn-primary:hover { background:#093070; }
+.back-link { display:inline-block; margin-bottom:20px; color:#0b3d91; text-decoration:none; font-weight:bold; }
+.back-link:hover { text-decoration:underline; }
+footer { background:#0b3d91; color:white; text-align:center; padding:20px; margin-top:40px; }
+</style>
+</head>
+<body>
 
-.hero-sub{height:40vh;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=1000&q=80');background-size:cover;background-position:center;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+<div class="hero-sub">
+<h1>Smart Home</h1>
+<p>Intelligentes Wohnen nach Maß – komfortabel, sicher und energieeffizient.</p>
+</div>
 
-.hero-sub h1{font-size:2.3rem;margin:0 0 10px 0;}
+<nav>
+<a href="index.html">Startseite</a>
+<a href="index.html#leistungen">Alle Leistungen</a>
+<a href="index.html#kontakt">Kontakt</a>
+<a href="index.html#impressum">Impressum</a>
+</nav>
 
-nav{position:sticky;top:0;background:#0b3d91;padding:10px;text-align:center;}
+<section>
+<a class="back-link" href="index.html#leistungen">← Zurück zur Übersicht</a>
 
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
+<div class="white-box">
+<h2>Zukunftssicheres Wohnen mit Köpfchen</h2>
+<p>Ein Zuhause, das mitdenkt, Ihren Alltag erleichtert und perfekt zu Ihnen passt: Das ist unsere Idee für Ihr modernes Smart Home. Wir machen Ihr privates Wohnobjekt fit für die Zukunft.</p>
 
-section{padding:50px 20px;max-width:900px;margin:auto;}
+<div class="wert">
+<h3>Individuelle Planung – So einzigartig wie Sie</h3>
+<p>Es gibt keine Standardlösungen von der Stange, denn jedes Objekt, jeder Alltag und jede Nutzung ist anders. Egal, ob Sie neu bauen, sanieren oder eine bestehende Immobilie clever nachrüsten möchten: Wir planen Ihr Smart Home maßgeschneidert auf Ihre persönlichen Wünsche und Gewohnheiten. Von der intelligenten Licht- und Heizungssteuerung über automatisierte Beschattung bis hin zur nahtlosen Integration von Sicherheitssystemen – Sie entscheiden, was Ihr Zuhause können soll.</p>
+</div>
 
-.box{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+<div class="wert">
+<h3>Sicherheit durch Kompetenz: Normen und Richtlinien im Blick</h3>
+<p>Ein smartes Zuhause muss nicht nur komfortabel sein, sondern vor allem sicher und zuverlässig laufen. Als Ihr qualifizierter Elektroinstallationsbetrieb überlassen wir nichts dem Zufall. Die strikte Einhaltung aller geltenden gesetzlichen Regelungen, VDE-Bestimmungen und aktuellen Sicherheitsnormen ist für uns selbstverständlich. Von der fachgerechten Verkabelung bis hin zur Absicherung sorgen wir für eine Installation auf höchstem technischem Niveau.</p>
+</div>
 
-.box h2{color:#0b3d91;margin-top:0;}
+<div class="wert">
+<h3>Smarte Lösungen für private Endverbraucher</h3>
+<p>Technik soll den Menschen dienen, nicht umgekehrt. Deshalb legen wir besonderen Wert auf Lösungen, die für Sie als Privatnutzer im Alltag echten Mehrwert bieten:</p>
+<ul>
+  <li><strong>Einfache Bedienung:</strong> Steuern Sie Ihr Zuhause intuitiv per App, Sprachbefehl oder klassischen Wandtastern.</li>
+  <li><strong>Energieeffizienz:</strong> Automatisierte Abläufe senken spürbar Ihre Heiz- und Stromkosten.</li>
+  <li><strong>Zukunftssicherheit:</strong> Unsere Systeme sind flexibel und lassen sich auch Jahre später problemlos erweitern.</li>
+</ul>
+</div>
+</div>
 
-.back{display:inline-block;margin-bottom:20px;color:#0b3d91;text-decoration:none;font-weight:bold;}
+<div class="white-box">
+<h2>Bereit für Ihr intelligentes Zuhause?</h2>
+<p>Lassen Sie uns gemeinsam Ihr Projekt planen. Kontaktieren Sie uns für ein unverbindliches Erstgespräch – wir freuen uns darauf, Ihr Objekt smart zu machen!</p>
+<p><strong>Elektroinstallation Manfred Kammhuber</strong><br>
+Theodor-Triebenbacher-Str. 16 · 84149 Velden/Vils<br>
+Tel. 08742 / 8798 · Mobil 0171 / 20 53 473<br>
+E-Mail: elektro-kammhuber@gmx.net</p>
+<div class="btn-row">
+<a class="btn btn-primary" href="index.html#kontakt">Jetzt anfragen</a>
+</div>
+</div>
 
-.btn{display:inline-block;padding:12px 24px;border-radius:6px;background:#0b3d91;color:white;text-decoration:none;font-weight:bold;margin-top:15px;}
+</section>
 
-footer{background:#0b3d91;color:white;text-align:center;padding:20px;margin-top:40px;}
+<footer>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber · <a href="index.html#impressum" style="color:white;">Impressum</a> · <a href="index.html#datenschutz" style="color:white;">Datenschutz</a></p>
+</footer>
 
-img.detail{width:100%;height:300px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
-
-</style></head><body>
-<div class="hero-sub"><h1>Smart Home</h1><p>Intelligente Steuerung für Licht, Heizung, Beschattung und Sicherheit – per App und Sprache.</p></div>
-<nav><a href="index.html">Startseite</a><a href="index.html#leistungen">Alle Leistungen</a><a href="index.html#kontakt">Kontakt</a></nav>
-<section><a class="back" href="index.html#leistungen">← Zurück zur Übersicht</a>
-<img class="detail" src="https://images.unsplash.com/photo-1558089687-f282ffcbc126?w=1000&q=80" alt="Smart Home">
-<div class="box"><h2>Smart Home</h2><p>Intelligente Steuerung für Licht, Heizung, Beschattung und Sicherheit – per App und Sprache.</p>
-<p>Platzhalter</p>
-<p><strong>Kontakt:</strong><br>Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>Tel. 08742 / 8798 · Mobil 0171 / 20 53 473<br>E-Mail: elektro-kammhuber@gmx.net</p>
-<a class="btn" href="index.html#kontakt">Jetzt anfragen</a></div></section>
-<footer><p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p></footer>
-</body></html>
+</body>
+</html>

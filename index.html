@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elektroinstallation Manfred Kammhuber</title>
+<title>Elektroinstallation Manfred Kammhuber – Meisterbetrieb in Velden/Vils</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
 body {
@@ -14,9 +14,9 @@ body {
 }
 /* HERO */
 .hero {
-    height:90vh;
-    background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-    url('');
+    min-height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+    url('header.jpg');
     background-size:cover;
     background-position:center;
     color:white;
@@ -25,9 +25,36 @@ body {
     justify-content:center;
     align-items:center;
     text-align:center;
+    padding:60px 20px;
 }
-.hero h1 { font-size:3rem; margin-bottom:15px; padding:0 20px; }
-.hero p { font-size:1.2rem; }
+.hero-badge {
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    border:1px solid rgba(255,255,255,0.6);
+    border-radius:30px;
+    padding:8px 18px;
+    font-size:0.95rem;
+    margin-bottom:18px;
+}
+.hero h1 { font-size:3rem; margin:0 0 15px 0; padding:0 20px; line-height:1.15; }
+.hero p.sub { font-size:1.25rem; max-width:700px; margin:0 0 25px 0; }
+.hero-buttons { display:flex; gap:15px; flex-wrap:wrap; justify-content:center; }
+.hero-buttons a {
+    padding:13px 28px;
+    border-radius:6px;
+    text-decoration:none;
+    font-weight:bold;
+}
+.btn-light { background:white; color:#0b3d91; }
+.btn-outline { border:2px solid white; color:white; }
+/* TRUST BAR */
+.trust-bar {
+    background:#0b3d91;
+    color:white;
+    text-align:center;
+    padding:14px 20px;
+    font-size:0.98rem;
+}
 /* NAV */
 nav {
     position:sticky;
@@ -36,6 +63,7 @@ nav {
     padding:10px;
     text-align:center;
     z-index:1000;
+    border-top:1px solid rgba(255,255,255,0.2);
 }
 nav a {
     color:white;
@@ -49,6 +77,31 @@ section {
     padding:60px 20px;
     max-width:1200px;
     margin:auto;
+}
+.intro-box {
+    background:white;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    display:flex;
+    gap:25px;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.intro-box .text { flex:1; min-width:280px; }
+.intro-box h2 { color:#0b3d91; margin-top:0; }
+.intro-box img {
+    width:380px;
+    max-width:100%;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.15);
+}
+.innung-hinweis {
+    margin-top:15px;
+    padding:12px 16px;
+    background:#eaf0ff;
+    border-radius:8px;
+    font-size:0.95rem;
 }
 /* CARDS */
 .services {
@@ -139,17 +192,43 @@ footer {
 <body>
 
 <div class="hero">
+<span class="hero-badge">Meisterbetrieb · Mitglied der Elektroinnung Landshut</span>
 <h1>Elektroinstallation Manfred Kammhuber</h1>
-<p>Moderne Elektrotechnik in der Perle des Vilstals</p>
-<p>Website noch in Arbeit</p>
+<p class="sub">Moderne Elektrotechnik in der Perle des Vilstals – sicher, intelligent und zukunftsorientiert.</p>
+<div class="hero-buttons">
+<a class="btn-light" href="#leistungen">Unsere Leistungen</a>
+<a class="btn-outline" href="#kontakt">Kontakt aufnehmen</a>
+</div>
+</div>
+
+<div class="trust-bar">
+Gebäudetechnik – Baustrom – Sat-Anlagen – Altbausanierung – Garten- &amp; Teichbeleuchtung
 </div>
 
 <nav>
+<a href="#betrieb">Betrieb</a>
 <a href="#leistungen">Leistungen</a>
 <a href="#kontakt">Kontakt</a>
 <a href="#impressum">Impressum</a>
 <a href="#datenschutz">Datenschutz</a>
 </nav>
+
+<section id="betrieb">
+<div class="intro-box">
+<div class="text">
+<h2>Willkommen bei Ihrem Meisterbetrieb aus Velden</h2>
+<p><strong>Elektroinstallation Manfred Kammhuber</strong><br>
+Theodor-Triebenbacher-Str. 16 · 84149 Velden<br>
+Telefon 08742 / 8798 · Mobil 0171 / 2053473</p>
+<p>Vom Wohnungsbau bis zum Gewerbeobjekt: Wir beraten persönlich, installieren sauber und bleiben für Wartung und E-Check an Ihrer Seite.</p>
+<div class="innung-hinweis">
+<strong>Mitglied der Elektroinnung Landshut</strong><br>
+<span style="font-size:0.9rem; color:#555;">Innungslogo wird nachgereicht.</span>
+</div>
+</div>
+<img src="header-visitenkarte.jpg" alt="Kontaktkarte Elektroinstallation Manfred Kammhuber – Meisterbetrieb Velden">
+</div>
+</section>
 
 <section id="leistungen">
 <h2>Unsere Leistungen</h2>
@@ -158,10 +237,10 @@ footer {
 
 <a class="card-link" href="elektroinstallation.html">
 <div class="card">
-<img src="" alt="Elektroinstallationen">
+<img src="elektro-monteur.jpg" alt="Elektroinstallationen">
 <div class="card-content">
 <h3>Elektroinstallationen</h3>
-<p>Planung und Umsetzung kompletter Elektroanlagen in Neubauten und Renovierungen – sicher, normgerecht und zukunftssicher.</p>
+<p>Elektrotechnik für Wohnbau und Gewerbe – präzise nach VDE-Norm, persönlich beraten und zukunftssicher installiert.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -172,7 +251,7 @@ footer {
 <img src="https://images.unsplash.com/photo-1565814329452-e1efa11c5b89?w=400&q=80" alt="Beleuchtungstechnik">
 <div class="card-content">
 <h3>Beleuchtungstechnik</h3>
-<p>Individuelle Lichtkonzepte mit moderner LED-Technik für Wohnräume, Außenbereiche und Gewerbeobjekte.</p>
+<p>Lichtplanung mit System und Verstand – Wohnlicht, Garten- und Teichbeleuchtung sowie effiziente Industrielösungen mit LED-Technik.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -194,7 +273,7 @@ footer {
 <img src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=400&q=80" alt="Photovoltaik">
 <div class="card-content">
 <h3>Photovoltaik</h3>
-<p>Effiziente Solaranlagen für nachhaltige Stromerzeugung und langfristige Kostensenkung.</p>
+<p>Ihre Energie, Ihre Unabhängigkeit – maßgeschneiderte PV-Anlage mit Speicher, Retrofit für Bestandsanlagen und Wallbox für E-Mobilität.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -205,7 +284,7 @@ footer {
 <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=400&q=80" alt="E-Check und Wartung">
 <div class="card-content">
 <h3>E-Check & Wartung</h3>
-<p>Regelmäßige Prüfung elektrischer Anlagen zur Sicherstellung von Funktionalität und Sicherheit.</p>
+<p>Professioneller E-Check nach DGUV Vorschrift 3 – Prüfung ortsfester und ortsveränderlicher Geräte inkl. Protokoll und Reparatur.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -213,10 +292,10 @@ footer {
 
 <a class="card-link" href="muellertechnik.html">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?w=400&q=80" alt="Müllertechnik">
+<img src="mueller-kachel.jpg" alt="Steuerungstechnik für Mühlenbetriebe">
 <div class="card-content">
-<h3>Spezialisiert Müllertechnik</h3>
-<p>Steuerungstechnische Anwendungen für Mühlen.</p>
+<h3>Steuerungstechnik</h3>
+<p>In modernen Mehlmühlen entscheidet die richtige Technik über Effizienz, Qualität und Wirtschaftlichkeit – unsere Spezialität: elektrische Steuerungstechnik für Mühlenbetriebe.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -224,10 +303,10 @@ footer {
 
 <a class="card-link" href="team.html">
 <div class="card">
-<img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&q=80" alt="Unser Team">
+<img src="team-manfred-kammhuber.jpg" alt="Unser Team">
 <div class="card-content">
 <h3>Unser Team</h3>
-<p>Unsere Spezialisten zum Thema Elektrotechnik stehen Ihnen gerne zur Verfügung.</p>
+<p>Handwerk mit Teamgeist – lernen Sie Manfred Kammhuber und seine Crew aus Velden kennen.</p>
 <span class="more">Mehr erfahren →</span>
 </div>
 </div>
@@ -244,17 +323,16 @@ footer {
 Theodor Triebenbacherstraße 16<br>
 84149 Velden/Vils
 </p>
-<p><strong>Email:</strong> elektro-kammhuber@gmx.net</p>
+<p><strong>Telefon:</strong> 08742 / 8798<br>
+<strong>Mobil:</strong> 0171 / 2053473<br>
+<strong>Email:</strong> elektro-kammhuber@gmx.net</p>
 <h3>Route planen</h3>
 <iframe src="https://www.google.com/maps?q=Theodor+Triebenbacherstraße+16+Velden&output=embed"></iframe>
 <h3>Kontaktformular</h3>
-<form action="https://formsubmit.co/elektro-kammhuber@gmx.net" method="POST">
+<form action="mailto:elektro-kammhuber@gmx.net" method="post" enctype="text/plain">
 <input type="text" name="Name" placeholder="Ihr Name" required>
 <input type="email" name="Email" placeholder="Ihre E-Mail" required>
 <textarea name="Nachricht" rows="5" placeholder="Ihre Nachricht" required></textarea>
-<input type="hidden" name="_subject" value="Neue Anfrage über Website!">
-<input type="hidden" name="_captcha" value="false">
-<input type="hidden" name="_template" value="table">
 <button type="submit">Nachricht senden</button>
 </form>
 </div>
@@ -269,6 +347,7 @@ Theodor Triebenbacherstraße 16<br>
 E-Mail: elektro-kammhuber@gmx.net<br>
 Tel. +49 8742 8798<br>
 Mobil +49 171 20 53 473<br>
+Mitglied der Elektroinnung Landshut
 </p>
 </section>
 
@@ -278,7 +357,7 @@ Mobil +49 171 20 53 473<br>
 </section>
 
 <footer>
-<p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber · Meisterbetrieb in Velden/Vils</p>
 </footer>
 
 </body>

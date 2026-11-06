@@ -1,42 +1,115 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Photovoltaik – Elektroinstallation Manfred Kammhuber</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Photovoltaik & Energiesysteme – Elektroinstallation Manfred Kammhuber</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f8ff;color:#222;}
+body { margin:0; font-family:'Poppins', sans-serif; background:#f4f8ff; color:#222; }
+.hero-sub {
+  height:50vh;
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+  url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1600&q=80');
+  background-size:cover; background-position:center;
+  color:white; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; padding:20px;
+}
+.hero-sub h1 { font-size:2.5rem; margin:0 0 10px 0; }
+.hero-sub p { font-size:1.1rem; max-width:700px; }
+nav { position:sticky; top:0; background:#0b3d91; padding:10px; text-align:center; z-index:1000; }
+nav a { color:white; margin:10px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+.white-box { background:white; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
+.white-box h2 { color:#0b3d91; margin-top:0; }
+.modul { background:#eaf0ff; border-radius:10px; padding:20px; margin-top:15px; }
+.modul h3 { margin:0 0 8px 0; color:#0b3d91; }
+.modul p { margin:0 0 8px 0; }
+.modul ul { margin:8px 0 0 0; padding-left:20px; }
+ul.check { list-style:none; padding:0; }
+ul.check li { padding:8px 0 8px 32px; position:relative; }
+ul.check li::before { content:"✓"; position:absolute; left:0; color:#0b3d91; font-weight:bold; font-size:1.2rem; }
+.btn-row { display:flex; gap:15px; flex-wrap:wrap; margin-top:20px; }
+.btn { display:inline-block; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; }
+.btn-primary { background:#0b3d91; color:white; }
+.btn-primary:hover { background:#093070; }
+.btn-secondary { background:white; color:#0b3d91; border:2px solid #0b3d91; }
+.btn-secondary:hover { background:#eaf0ff; }
+.back-link { display:inline-block; margin-bottom:20px; color:#0b3d91; text-decoration:none; font-weight:bold; }
+.back-link:hover { text-decoration:underline; }
+footer { background:#0b3d91; color:white; text-align:center; padding:20px; margin-top:40px; }
+img.detail { width:100%; height:320px; object-fit:cover; border-radius:12px; margin-bottom:20px; }
+</style>
+</head>
+<body>
 
-.hero-sub{height:40vh;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1000&q=80');background-size:cover;background-position:center;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+<div class="hero-sub">
+<h1>Photovoltaik &amp; Energiesysteme</h1>
+<p>Ihre Energie, Ihre Unabhängigkeit – maßgeschneidert, normgerecht und zukunftssicher.</p>
+</div>
 
-.hero-sub h1{font-size:2.3rem;margin:0 0 10px 0;}
+<nav>
+<a href="index.html">Startseite</a>
+<a href="index.html#leistungen">Alle Leistungen</a>
+<a href="index.html#kontakt">Kontakt</a>
+<a href="index.html#impressum">Impressum</a>
+</nav>
 
-nav{position:sticky;top:0;background:#0b3d91;padding:10px;text-align:center;}
+<section>
+<a class="back-link" href="index.html#leistungen">← Zurück zur Übersicht</a>
 
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
+<img class="detail" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1000&q=80" alt="Photovoltaikanlage">
 
-section{padding:50px 20px;max-width:900px;margin:auto;}
+<div class="white-box">
+<h2>Photovoltaik &amp; Energiesysteme: Ihre Energie, Ihre Unabhängigkeit</h2>
+<p>Wir planen und installieren Ihre maßgeschneiderte Photovoltaikanlage für eine nachhaltige und zukunftssichere Stromversorgung. Jedes Gebäude ist anders, und jeder Energiebedarf ist individuell. Deshalb erhalten Sie von uns keine Standardlösungen, sondern ein perfekt auf Ihr Objekt und Ihre Wünsche abgestimmtes Gesamtkonzept.</p>
+<p>Bei der Umsetzung überlassen wir nichts dem Zufall: Wir garantieren die strikte Beachtung aller aktuell geltenden Regelungen, VDE-Normen und gesetzlichen Vorgaben – für maximale Sicherheit und einen reibungslosen Netzanschluss.</p>
+</div>
 
-.box{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+<div class="white-box">
+<h2>Unsere Leistungen im Überblick</h2>
 
-.box h2{color:#0b3d91;margin-top:0;}
+<div class="modul">
+<h3>Moderne Speichersysteme: Strom nutzen, wenn Sie ihn brauchen</h3>
+<p>Ein Batteriespeicher ist das Herzstück Ihrer energetischen Unabhängigkeit. Er speichert den tagsüber produzierten Solarstrom, damit Sie ihn am Abend oder in der Nacht nutzen können. Wir integrieren hochmoderne, langlebige Speichersysteme in Ihre Neuanlage oder rüsten Ihr bestehendes System nach. So maximieren Sie Ihren Eigenverbrauch und minimieren Ihre Stromkosten.</p>
+</div>
 
-.back{display:inline-block;margin-bottom:20px;color:#0b3d91;text-decoration:none;font-weight:bold;}
+<div class="modul">
+<h3>Retrofit &amp; Post-EEG: Neues Leben für Ihre Bestandsanlage</h3>
+<p>Ihre PV-Anlage kommt in die Jahre oder fällt demnächst aus der gesetzlichen 20-jährigen EEG-Vergütung? Wir machen Ihre Bestandsanlage fit für die Zukunft! Durch gezieltes Retrofit (Modernisierung von Komponenten wie dem Wechselrichter) bleibt Ihre Anlage technisch auf dem neuesten Stand und läuft weiterhin hocheffizient.</p>
+</div>
 
-.btn{display:inline-block;padding:12px 24px;border-radius:6px;background:#0b3d91;color:white;text-decoration:none;font-weight:bold;margin-top:15px;}
+<div class="modul">
+<h3>Umbau von Volleinspeisung auf Überschusseinspeisung</h3>
+<p>Für ältere Anlagen, die bisher ihren gesamten Strom ins Netz eingespeist haben, lohnt sich die Volleinspeisung wirtschaftlich meist nicht mehr. Wir bauen Ihre Anlage fachgerecht auf Überschusseinspeisung mit modernem Batteriespeicher um. Das bedeutet: Sie verbrauchen Ihren grünen Strom ab jetzt selbst und speisen nur noch den überschüssigen Rest ein. Das ist die rentabelste Lösung für die Zeit nach dem EEG-Auslauf. Eine automatische Umschaltung auf Notstrombetrieb bei einem Fehlerfall im Stromnetz bietet neue Nutzungsmöglichkeiten und liefert ein sicheres Gefühl.</p>
+</div>
 
-footer{background:#0b3d91;color:white;text-align:center;padding:20px;margin-top:40px;}
+<div class="modul">
+<h3>E-Mobilität: Ladesäulen &amp; Wallboxen</h3>
+<p>Verbinden Sie Ihre Stromerzeugung direkt mit Ihrer Mobilität. Wir planen und installieren sichere Ladelösungen für Elektrofahrzeuge:</p>
+<ul>
+<li><strong>Für Privatkunden:</strong> Intelligente Wallboxen für die eigene Garage oder den Carport – perfekt abgestimmt auf das Laden mit eigenem Solarstrom (Überschussladen).</li>
+<li><strong>Für den Wohnungsbau:</strong> Zukunftssichere Ladeinfrastruktur für Mietobjekte und Wohnungseigentümergemeinschaften (WEG) inklusive Lastmanagement für mehrere Fahrzeuge.</li>
+</ul>
+</div>
+</div>
 
-img.detail{width:100%;height:300px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
+<div class="white-box">
+<h2>Bereit für die eigene Energiewende?</h2>
+<p>Kontaktieren Sie uns für eine unverbindliche Beratung und ein individuelles Angebot direkt für Ihr Objekt!</p>
+<div class="btn-row">
+<a class="btn btn-primary" href="index.html#kontakt">Jetzt Anfrage senden</a>
+<a class="btn btn-secondary" href="tel:+4987428798">Anrufen: 08742 / 8798</a>
+</div>
+<p style="margin-top:15px; font-size:0.95rem;">Adresse: Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>E-Mail: elektro-kammhuber@gmx.net · Mobil: 0171 / 20 53 473</p>
+</div>
 
-</style></head><body>
-<div class="hero-sub"><h1>Photovoltaik</h1><p>Eigene Solaranlage für nachhaltigen Strom und niedrigere Kosten – inkl. Speicher und Wallbox-Anbindung.</p></div>
-<nav><a href="index.html">Startseite</a><a href="index.html#leistungen">Alle Leistungen</a><a href="index.html#kontakt">Kontakt</a></nav>
-<section><a class="back" href="index.html#leistungen">← Zurück zur Übersicht</a>
-<img class="detail" src="https://images.unsplash.com/photo-1509391366360-2e959784a276?w=1000&q=80" alt="Photovoltaik">
-<div class="box"><h2>Photovoltaik</h2><p>Eigene Solaranlage für nachhaltigen Strom und niedrigere Kosten – inkl. Speicher und Wallbox-Anbindung.</p>
-<p>Platzhalter</p>
-<p><strong>Kontakt:</strong><br>Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>Tel. 08742 / 8798 · Mobil 0171 / 20 53 473<br>E-Mail: elektro-kammhuber@gmx.net</p>
-<a class="btn" href="index.html#kontakt">Jetzt anfragen</a></div></section>
-<footer><p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p></footer>
-</body></html>
+</section>
+
+<footer>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber · <a href="index.html#impressum" style="color:white;">Impressum</a> · <a href="index.html#datenschutz" style="color:white;">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>

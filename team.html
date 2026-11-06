@@ -1,42 +1,126 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Unser Team – Elektroinstallation Manfred Kammhuber</title>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 <style>
-body{margin:0;font-family:'Poppins',sans-serif;background:#f4f8ff;color:#222;}
+body { margin:0; font-family:'Poppins', sans-serif; background:#f4f8ff; color:#222; }
+.hero-sub {
+  height:45vh;
+  background:linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.65)),
+  url('team-manfred-kammhuber.jpg');
+  background-size:cover; background-position:center 20%;
+  color:white; display:flex; flex-direction:column;
+  justify-content:center; align-items:center; text-align:center; padding:20px;
+}
+.hero-sub h1 { font-size:2.5rem; margin:0 0 10px 0; }
+.hero-sub p { font-size:1.1rem; max-width:700px; }
+nav { position:sticky; top:0; background:#0b3d91; padding:10px; text-align:center; z-index:1000; }
+nav a { color:white; margin:10px; text-decoration:none; font-weight:bold; }
+nav a:hover { text-decoration:underline; }
+section { padding:50px 20px; max-width:1000px; margin:auto; }
+.white-box { background:white; padding:30px; border-radius:12px; box-shadow:0 4px 15px rgba(0,0,0,0.1); margin-bottom:25px; }
+.white-box h2 { color:#0b3d91; margin-top:0; }
+.wert { background:#eaf0ff; border-radius:10px; padding:20px; margin-top:15px; }
+.wert h3 { margin:0 0 8px 0; color:#0b3d91; }
+.wert p { margin:0; }
+.team-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:20px; margin-top:20px; }
+.member { background:#f4f8ff; border-radius:12px; overflow:hidden; text-align:center; box-shadow:0 2px 8px rgba(0,0,0,0.08); }
+.member img { width:100%; height:320px; object-fit:cover; object-position:top; display:block; }
+.member .placeholder { width:100%; height:320px; display:flex; align-items:center; justify-content:center; background:#dbe4f5; color:#0b3d91; font-weight:bold; font-size:1.1rem; }
+.member .info { padding:15px; }
+.member .info strong { display:block; color:#0b3d91; font-size:1.05rem; }
+.member .info span { font-size:0.92rem; color:#555; }
+.btn-row { display:flex; gap:15px; flex-wrap:wrap; margin-top:20px; }
+.btn { display:inline-block; padding:12px 24px; border-radius:6px; text-decoration:none; font-weight:bold; }
+.btn-primary { background:#0b3d91; color:white; }
+.btn-primary:hover { background:#093070; }
+.back-link { display:inline-block; margin-bottom:20px; color:#0b3d91; text-decoration:none; font-weight:bold; }
+.back-link:hover { text-decoration:underline; }
+footer { background:#0b3d91; color:white; text-align:center; padding:20px; margin-top:40px; }
+</style>
+</head>
+<body>
 
-.hero-sub{height:40vh;background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.65)),url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=80');background-size:cover;background-position:center;color:white;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;}
+<div class="hero-sub">
+<h1>Unser Team</h1>
+<p>Bei uns trifft ausgezeichnetes Handwerk auf echten Teamgeist.</p>
+</div>
 
-.hero-sub h1{font-size:2.3rem;margin:0 0 10px 0;}
+<nav>
+<a href="index.html">Startseite</a>
+<a href="index.html#leistungen">Alle Leistungen</a>
+<a href="index.html#kontakt">Kontakt</a>
+<a href="index.html#impressum">Impressum</a>
+</nav>
 
-nav{position:sticky;top:0;background:#0b3d91;padding:10px;text-align:center;}
+<section>
+<a class="back-link" href="index.html#leistungen">← Zurück zur Übersicht</a>
 
-nav a{color:white;margin:10px;text-decoration:none;font-weight:bold;}
+<div class="white-box">
+<h2>Handwerk mit Teamgeist</h2>
+<p>Als modernes Elektroinstallationsunternehmen wissen wir, dass jede erfolgreiche Projektumsetzung – von der präzisen Gebäudeautomation bis zur klassischen Elektroinstallation – das Ergebnis einer starken Gemeinschaft ist.</p>
+<p>Unser Team zeichnet sich durch vier Kernwerte aus:</p>
 
-section{padding:50px 20px;max-width:900px;margin:auto;}
+<div class="wert">
+<h3>Gelebte Teamfähigkeit</h3>
+<p>Bei uns arbeitet niemand als Einzelkämpfer. Unsere Elektriker und Meister arbeiten Hand in Hand. Wir unterstützen uns gegenseitig, teilen unser Wissen und lösen komplexe technische Herausforderungen gemeinsam.</p>
+</div>
 
-.box{background:white;padding:30px;border-radius:12px;box-shadow:0 4px 15px rgba(0,0,0,0.1);}
+<div class="wert">
+<h3>Höchste Einsatzbereitschaft</h3>
+<p>Wenn es darauf ankommt, sind wir voll da. Unsere Kunden schätzen unsere Zuverlässigkeit, Flexibilität und den Anspruch, jedes Projekt termingerecht und in höchster Qualität abzuschließen.</p>
+</div>
 
-.box h2{color:#0b3d91;margin-top:0;}
+<div class="wert">
+<h3>Ständiger Lernwille</h3>
+<p>Die Elektrotechnik entwickelt sich rasant weiter. Ob Smart Home, erneuerbare Energien oder moderne Sicherheitskonzepte – unser Team bleibt durch kontinuierliche Weiterbildung immer am Puls der Zeit und bringt neue Technologien motiviert auf die Baustelle.</p>
+</div>
 
-.back{display:inline-block;margin-bottom:20px;color:#0b3d91;text-decoration:none;font-weight:bold;}
+<div class="wert">
+<h3>Ein großartiges Betriebsklima</h3>
+<p>Ein respektvoller, humorvoller und offener Umgang sorgt dafür, dass wir jeden Tag gerne zur Arbeit kommen. Vertrauen und Zusammenhalt stehen bei uns im Alltag an oberster Stelle.</p>
+</div>
+</div>
 
-.btn{display:inline-block;padding:12px 24px;border-radius:6px;background:#0b3d91;color:white;text-decoration:none;font-weight:bold;margin-top:15px;}
+<div class="white-box">
+<h2>Chef und Crew auf Augenhöhe</h2>
+<p>Ein gutes Klima entsteht nicht von allein – es wird von oben vorgelebt. Unserem Inhaber ist ein enges, ehrliches Verhältnis zu allen Mitarbeitern eine echte Herzensangelegenheit. Bei uns gibt es keine starren Hierarchien, sondern offene Türen und ein Ohr für persönliche Belange.</p>
+<p><strong>Fairness ist dabei der Grundpfeiler unserer Führungskultur:</strong> Das bedeutet für uns eine leistungsgerechte Vergütung, verlässliche Absprachen, die Wertschätzung der individuellen Leistung und die Bereitstellung von erstklassigem Werkzeug und moderner Arbeitskleidung. Denn wir sind überzeugt: Nur wer sich fair behandelt und rundum wohlfühlt, kann Bestleistungen erbringen.</p>
+</div>
 
-footer{background:#0b3d91;color:white;text-align:center;padding:20px;margin-top:40px;}
+<div class="white-box">
+<h2>Unsere Köpfe</h2>
+<div class="team-grid">
+<div class="member">
+<img src="team-manfred-kammhuber.jpg" alt="Manfred Kammhuber – Inhaber">
+<div class="info"><strong>Manfred Kammhuber</strong><span>Inhaber · Meisterbetrieb</span></div>
+</div>
+<div class="member">
+<img src="team-daniel-rueckauf.jpg" alt="Daniel Rückauf">
+<div class="info"><strong>Daniel Rückauf</strong><span>Teammitglied</span></div>
+</div>
+<div class="member">
+<div class="placeholder">Bild folgt</div>
+<div class="info"><strong>Matthias Wenzl</strong><span>Teammitglied</span></div>
+</div>
+<div class="member">
+<div class="placeholder">Bild folgt</div>
+<div class="info"><strong>Michael Machart</strong><span>Teammitglied</span></div>
+</div>
+</div>
+<div class="btn-row">
+<a class="btn btn-primary" href="index.html#kontakt">Kontakt aufnehmen</a>
+</div>
+</div>
 
-img.detail{width:100%;height:300px;object-fit:cover;border-radius:12px;margin-bottom:20px;}
+</section>
 
-</style></head><body>
-<div class="hero-sub"><h1>Unser Team</h1><p>Unsere Spezialisten zum Thema Elektrotechnik stehen Ihnen gerne zur Verfügung.</p></div>
-<nav><a href="index.html">Startseite</a><a href="index.html#leistungen">Alle Leistungen</a><a href="index.html#kontakt">Kontakt</a></nav>
-<section><a class="back" href="index.html#leistungen">← Zurück zur Übersicht</a>
-<img class="detail" src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1000&q=80" alt="Unser Team">
-<div class="box"><h2>Unser Team</h2><p>Unsere Spezialisten zum Thema Elektrotechnik stehen Ihnen gerne zur Verfügung.</p>
-<p>Platzhalter</p>
-<p><strong>Kontakt:</strong><br>Theodor Triebenbacherstraße 16, 84149 Velden/Vils<br>Tel. 08742 / 8798 · Mobil 0171 / 20 53 473<br>E-Mail: elektro-kammhuber@gmx.net</p>
-<a class="btn" href="index.html#kontakt">Jetzt anfragen</a></div></section>
-<footer><p>&copy; 2026 Elektroinstallation Manfred Kammhuber</p></footer>
-</body></html>
+<footer>
+<p>&copy; 2026 Elektroinstallation Manfred Kammhuber · <a href="index.html#impressum" style="color:white;">Impressum</a> · <a href="index.html#datenschutz" style="color:white;">Datenschutz</a></p>
+</footer>
+
+</body>
+</html>
