@@ -42,6 +42,36 @@ ul.check li::before { content:"✓"; position:absolute; left:0; color:#0b3d91; f
 .back-link:hover { text-decoration:underline; }
 footer { background:#0b3d91; color:white; text-align:center; padding:20px; margin-top:40px; }
 img.detail { width:100%; height:320px; object-fit:cover; border-radius:12px; margin-bottom:20px; }
+
+/* === NUR Handy-Optimierung (Desktop unverändert) === */
+@media(max-width:768px){
+  html,body{overflow-x:hidden}
+  img{max-width:100%;height:auto}
+  nav{padding:8px 6px !important}
+  nav a{display:inline-block;margin:6px 8px !important;font-size:0.95rem}
+  .hero{min-height:70vh !important;padding:44px 16px !important}
+  .hero h1{font-size:1.9rem !important;line-height:1.25 !important;padding:0 !important}
+  .hero p.sub{font-size:1.05rem !important}
+  .hero-buttons{flex-direction:column;width:100%;max-width:320px}
+  .hero-buttons a{width:100%;text-align:center;box-sizing:border-box}
+  .hero-sub{height:auto !important;min-height:32vh;padding:50px 16px 34px 16px !important}
+  .hero-sub h1{font-size:1.7rem !important}
+  .hero-sub p{font-size:1rem !important}
+  section{padding:36px 16px !important}
+  .intro-box{flex-direction:column;padding:22px 18px !important}
+  .intro-box img{width:100% !important}
+  .services{grid-template-columns:1fr !important}
+  .gallery{grid-template-columns:1fr !important}
+  .white-box{padding:22px 18px !important}
+  form input,form textarea{font-size:16px !important}
+  iframe{height:260px !important}
+}
+@media(max-width:480px){
+  .hero h1{font-size:1.6rem !important}
+  .hero-badge{font-size:0.8rem !important}
+  .trust-bar{font-size:0.85rem !important}
+}
+
 </style>
 </head>
 <body>
@@ -113,5 +143,5 @@ img.detail { width:100%; height:320px; object-fit:cover; border-radius:12px; mar
 <p>&copy; 2026 Elektroinstallation Manfred Kammhuber · <a href="index.html#impressum" style="color:white;">Impressum</a> · <a href="index.html#datenschutz" style="color:white;">Datenschutz</a></p>
 </footer>
 
-</body>
+<script>window.__CF$cv$params={r:'a57f7383ac793057',t:'MTc5NDI1NDkyNQ==',u:'01a1c1ed6f8e76e19d573c5ee1b3203d',ut:'iqem1gyLt059Ixq18WKWbDTivrjiZGPckvX7q1yk_O4-1794254925-1.2.1.1-QoAzZfMG287E6.H5vFZiTQ6SOR7Dj4PHWjMi1WDAL_8aXXN_wWmVeXFbamT4l0_Z.nnda1NpYj_h0CcLUCcRGK5RaAZdRWl4fggLwTlYDs4',i:60};(function(){if(!document.body)return;var l=window.location,o;try{o=new URL(l.origin).origin}catch(e){try{o=new URL(new URL(l.href).origin).origin}catch(e){o=''}}var u='/cdn-cgi/challenge-platform/scripts/precursor/main.js?ray=a57f7383ac793057',s=document.createElement('script');s.src=o?new URL(u,o).href:u;document.head.appendChild(s);})();</script></body>
 </html>
